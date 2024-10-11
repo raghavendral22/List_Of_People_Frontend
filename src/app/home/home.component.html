@@ -1,0 +1,43 @@
+
+<h2>People List</h2>
+
+    <table class="table table-striped">
+      
+  
+      <thead>
+  
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+  
+          <th>Age</th>
+  
+          <th>Gender</th>
+
+          <th>Mobile Number</th>
+  
+        </tr>
+  
+      </thead>
+  
+      <tbody>
+  
+        <tr *ngFor = "let acc of Persons">
+          <td>{{acc._id}}</td>
+          <td>{{ acc.Name }}</td>
+  
+          <td>{{ acc.Age }}</td>
+          <td>{{ acc.Gender }}</td>
+          <td>{{ acc.Mobilenumber }}</td>
+          <td>
+            <button class="btn btn-success" routerLink="/update-people/{{acc._id}}">Edit</button>
+            <button type="button" class="btn btn-danger" (click)="setDelete(acc)">Delete</button>
+          </td>
+  
+        </tr>
+  
+      </tbody>
+  
+    </table>
+  
+  

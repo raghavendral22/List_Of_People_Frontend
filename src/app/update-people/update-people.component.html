@@ -1,0 +1,33 @@
+<div class="col-md-8 offset-md-3">
+    <h1 class="text-center">Update Account</h1>
+    <form>
+        <div class="form-group">
+    
+            <label>Name</label>
+            <input type="text" [(ngModel)]="Name" id="Name" class="form-control" name="Name" placeholder="Enter Name"/>
+    
+        </div>
+    <br>
+        <div>
+            <label>Age</label>
+            <input type="text" [(ngModel)]="Age" id="Age" class="form-control" name="Age" placeholder="Enter Age"/>
+    
+        </div>
+    <br>
+        <div>
+            <label>Gender</label>
+            <input type="text" [(ngModel)]="Gender" id="Gender" class="form-control" name="Gender" placeholder="Enter Gender"/>
+    
+        </div>
+    <br>
+        <div>
+            <label>Mobile Number</label>
+            <input type="text" [(ngModel)]="Mobilenumber" id="MobileNumber" class="form-control" name="MobileNumber" placeholder="Enter Mobile Number"/>
+    
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success" (click)="Update()">submit</button>
+    
+    
+    </form>
+    </div>
